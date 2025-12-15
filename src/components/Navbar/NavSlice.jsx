@@ -6,7 +6,7 @@ const NavSlice = ({info}) => {
   return (
     <>
     <Link to={path}>
-      <div className='font-semibold p-2 text-gray-400 text-[20px] hover:text-[#FD8A6D] transition ease-in-ease-out'>
+      <div className='font-semibold p-2 text-gray-400 text-[20px] hover:text-[#FD8A6D] hover:scale-[1.2] duration transition ease-in-ease-out'>
         {title}
       </div>
     </Link>
