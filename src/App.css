@@ -2,18 +2,19 @@
     background-color: #1D1D37;
     padding:0 90px;
     color:#FFFFFF;
-    width: fit-content;
-    height: fit-content;
+    width: screen;
+    height: screen;
 }
 
 .logo{
-    height:84px;
-    width:84px;
+    height:70px;
+    width:70px;
     background-color: white;
     border-radius: 50%;
     display: flex;
     align-self: center;
     justify-content: center;
+    margin-top: 10px;
 }
 
 @media (max-width: 768px) {
