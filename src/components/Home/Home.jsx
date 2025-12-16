@@ -4,9 +4,9 @@ import Hero from './Hero'
 
 const Home = () => {
   return (
-    <div className='container'>
+    <div className='container justify-center items-center gap-20'>
       <Navbar/>
-      <Hero/>
+      <Hero className='mt-[10vh]'/>
     </div>
   )
 }

@@ -2,21 +2,21 @@ import React from 'react'
 import image from '/images/image.png'
 const Hero = () => {
   return (
-    <div className='flex justify-center align-center w-full h-140'>
-        <div className='flex flex-col justify=center align-center w-3/5 h-full py-[120px] pl-[80px]'>
-          <h1 className='text-[60px] font-semibold'>I am <span className='text-[#FD8A6D]'>Priya Dwivedi</span></h1>
+    <div className='flex lg:flex-row md:flex-row flex-col justify-center items-start w-full lg:h-140 md:h-84 h-full'>
+        <div className='flex flex-col justify-center items-start lg:w-3/5 md:w-3/5 w-full h-full lg:py-[120px] md:py-[60px] py-[20px] lg:pl-[80px] md:pl-[40px] pl-[20px]'>
+          <h1 className='lg:text-[60px] md:text-[30px] text-[22px] font-semibold'>I am <span className='text-[#FD8A6D]'>Priya Dwivedi</span></h1>
           <p className='text-[16px] font-semibold'>Frontend Developer</p>
-          <p className='text-[22px] leading-[35px] font-light font-[600] py-6 mr-16'>
+          <p className='lg:text-[22px] md:text-[16px] text-[12px] lg:leading-[35px] md:leading-[25px] leading-[20px] font-light font-[600] lg:py-6 md:py-4 py-2 lg:mr-16 md:mr-8 mr-4'>
             A frontend developer and UI/UX designer passionate about creating clean, intuitive, and user-centered digital experiences.
             I design with clarity, develop with precision, and build products that feel simple, modern, and meaningful.
           </p>
-          <div className='flex gap-8 py-4'>
-            <button className='bg-[#FD8A6D] hover:scale-[1.12] transition ease-in-ease-out font-[600] px-6 py-2 text-[22px] text-[#1D1D37] border-2 rounded-md border-[#1D1D37]'>LinkedIN</button>
-            <button className='bg-[#1D1D37] hover:scale-[1.12] transition ease-in-ease-out font-[600] px-3 py-2 text-[22px] text-[#FD8A6D] border-2 rounded-md border-[#FD8A6D]'>Download Resume</button>
+          <div className='flex lg:gap-8 md:gap-4 gap-2 lg:py-4 md:py-2 py-1'>
+            <button className='bg-[#FD8A6D] hover:scale-[1.12] transition ease-in-ease-out font-[600] px-3 py-2 lg:text-[22px] md:text-[14px] text-[12px] text-[#1D1D37] border-2 rounded-md border-[#1D1D37]'>LinkedIN</button>
+            <button className='bg-[#1D1D37] hover:scale-[1.12] transition ease-in-ease-out font-[600] px-3 py-2 lg:text-[22px] md:text-[15px] text-[12px] text-[#FD8A6D] border-2 rounded-md border-[#FD8A6D]'>Download Resume</button>
           </div>
         </div>
-        <div className='w-2/5 h-full'>
-          <img src={image}/>
+        <div className='lg:w-2/5 md:w-2/5 w-full lg:h-full md:h-full h-[50%]'>
+          <img src={image} className='w-full h-full object-contain'/>
         </div> 
     </div>
   )
