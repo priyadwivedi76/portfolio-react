@@ -2,8 +2,6 @@
     background-color: #1D1D37;
     padding:0 90px;
     color:#FFFFFF;
-    width: screen;
-    height: screen;
 }
 
 .logo{
@@ -13,24 +11,25 @@
     border-radius: 50%;
     display: flex;
     align-self: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 10px;
 }
 
 @media (max-width: 768px) {
     .container{
-        padding: 0 30px;
+        padding: 0 60px;
     }
 
     .logo{
-        height:72px;
-        width:72px;
+        height:50px;
+        width:50px;
     }
 }
 
 @media (max-width: 480px) {
     .container{
         padding: 0 30px;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;

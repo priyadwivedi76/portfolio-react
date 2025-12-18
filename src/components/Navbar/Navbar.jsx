@@ -28,7 +28,7 @@ const Navbar = () => {
         }
     ]
 
-    const [openMenu,setOpenMenu]=useState(true);
+    const [openMenu,setOpenMenu]=useState(false);
 
     const handleClick=()=>{
         setOpenMenu((prev)=>!prev)

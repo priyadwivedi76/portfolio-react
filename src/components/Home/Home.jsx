@@ -1,12 +1,14 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import Hero from './Hero'
+import Cards from './Cards'
 
 const Home = () => {
   return (
-    <div className='container justify-center items-center gap-20'>
+    <div className='container'>
       <Navbar/>
-      <Hero className='mt-[10vh]'/>
+      <Hero/>
+      <Cards/>
     </div>
   )
 }
