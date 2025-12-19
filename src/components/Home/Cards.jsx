@@ -24,9 +24,9 @@ const Cards = () => {
     ]
 
   return (
-    <div className='lg:min-h-[50vh] md:min-h-[35vh] min-h-[80vh] flex lg:flex-row md:flex-row flex-col items-center justify-evenly'>
+    <div className='lg:min-h-[50vh] md:min-h-[35vh] min-h-[80vh] flex lg:flex-row md:flex-row flex-col items-center justify-center lg:gap-10 md:gap-6 gap-5'>
         {CardData.map((items)=>{
-            return <Card info={items} />
+            return <Card key={items.id} info={items} />
         })}
     </div>
   )
@@ -42,7 +42,6 @@ export const Card=({info})=>{
             {Icon && <Icon className='lg:h-[80px] lg:w-[80px] md:h-[40px] md:w-[40px] h-[40px] w-[40px] text-[#B3887E]'/>}
             <h1 className='lg:text-[28px] md:text-[18px] text-[16px] font-semibold lg:py-3 md:py-2 py-1'>{title}</h1>
             <p className='lg:text-[14px] md:text-[12px] text-[10px] text-center opacity-[80%]'>{desciption}</p>
-           
         </div>
         </>
     )
