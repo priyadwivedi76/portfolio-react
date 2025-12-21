@@ -1,6 +1,5 @@
 import React from 'react'
 import { iconsImg } from './icons2'
-import { Card } from '../Home/Cards'
 
 const Tools = () => {
     const ToolsData=[
@@ -58,8 +57,8 @@ export const ToolCard=({info})=>{
             
     return(
         <>
-        <div className='lg:min-h-[25vh] lg:px-10 md:px-5 px-3 md:min-h-[18vh] h-[16vh] flex flex-col justify-center items-center lg:w-[15vw] md:w-[14vw] w-[40vw] bg-[#2c2c43] rounded-lg hover:scale-[1.15] transition ease-in-ease-out'>
-            {src && <img className='w-[50px] h-[50px] object-cover' src={src}/>}
+        <div className='lg:min-h-[25vh] lg:px-8 md:px-5 px-3 md:min-h-[18vh] h-[18vh] flex flex-col justify-center items-center lg:w-[14vw] md:w-[14vw] w-[35vw] bg-[#2c2c43] rounded-lg hover:scale-[1.15] transition ease-in-ease-out'>
+            {src && <img className='w-[60px] h-[60px] object-cover' src={src}/>}
             <h1 className='lg:text-[28px] md:text-[15px] text-[12px] font-semibold lg:py-3 md:py-2 py-1'>{title}</h1>
         </div>
         </>
